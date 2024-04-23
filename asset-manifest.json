@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anmolsharma2704/ShreeEvent/static/css/main.1f4afdcd.css",
-    "main.js": "/anmolsharma2704/ShreeEvent/static/js/main.1f8462e8.js",
+    "main.js": "/anmolsharma2704/ShreeEvent/static/js/main.3b73fbc7.js",
     "static/js/453.58036bae.chunk.js": "/anmolsharma2704/ShreeEvent/static/js/453.58036bae.chunk.js",
     "static/media/Talent & Skill.png": "/anmolsharma2704/ShreeEvent/static/media/Talent & Skill.d8f406d7d9d5127d6d8f.png",
     "static/media/Black.png": "/anmolsharma2704/ShreeEvent/static/media/Black.be4d80c9177efdf8378b.png",
@@ -54,11 +54,11 @@
     "static/media/Events_Image.png": "/anmolsharma2704/ShreeEvent/static/media/Events_Image.61ceb097087f38a95354.png",
     "index.html": "/anmolsharma2704/ShreeEvent/index.html",
     "main.1f4afdcd.css.map": "/anmolsharma2704/ShreeEvent/static/css/main.1f4afdcd.css.map",
-    "main.1f8462e8.js.map": "/anmolsharma2704/ShreeEvent/static/js/main.1f8462e8.js.map",
+    "main.3b73fbc7.js.map": "/anmolsharma2704/ShreeEvent/static/js/main.3b73fbc7.js.map",
     "453.58036bae.chunk.js.map": "/anmolsharma2704/ShreeEvent/static/js/453.58036bae.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f4afdcd.css",
-    "static/js/main.1f8462e8.js"
+    "static/js/main.3b73fbc7.js"
   ]
 }
