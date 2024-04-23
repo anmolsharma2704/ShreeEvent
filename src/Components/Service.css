@@ -1,0 +1,104 @@
+#teamImgContainer {
+    position: relative;
+}
+
+#teamImgContainer img {
+    width: 100vw;
+    height: 70vh;
+    object-fit: cover;
+}
+
+#team-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(1, 175, 255);
+    padding: 10px;
+    font-family: cursive, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: xx-large;
+}
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Adjust the height as needed */
+}
+
+.slider img {
+  max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+  max-height: 100%; /* Ensure the image doesn't exceed the height of its container */
+}
+
+
+#text1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 50px;
+}
+
+#text1 h1 {
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+#text1 h1::first-letter {
+  font-size: 150%;
+  color: #ff6600;
+}
+
+#text1 h1 br {
+  display: none;
+}
+
+#text1 h1:hover {
+  color: #ff6600;
+  transition: color 0.3s ease-in-out;
+}
+
+  
+
+#line {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 60vw;
+    border-style: solid;
+    border-width: 1.5px;
+}
+
+.events-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.event {
+    text-align: center;
+    max-width: 300px;
+}
+
+.event img {
+    max-width: 100%;
+    height: auto;
+}
+
+.event h3 {
+    margin-bottom: 10px;
+}
+
+.event p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+#serviceImg {
+  max-width: 70%;
+  max-height: 70%;
+  width: auto;
+  height: auto;
+  margin: auto;
+  display: block;
+  padding: 2%;
+}

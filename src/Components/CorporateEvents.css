@@ -1,0 +1,82 @@
+/* Default styles for larger screens */
+#serviceText4 {
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#nonProfitImage {
+  flex: 1;
+  max-width: 40%;
+  margin-right: 20px;
+}
+
+#nonProfitContent {
+  flex: 1;
+  max-width: 55%;
+}
+
+#serviceText4 h2 {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#serviceText4 p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+#serviceText4 ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 10vw;
+}
+
+#serviceText4 li {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+#serviceText4 li:before {
+  content: "\2022";
+  color: #007bff;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+#serviceText4 li:last-child {
+  margin-bottom: 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  #serviceText4 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #nonProfitImage {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #nonProfitContent {
+    max-width: 100%;
+  }
+}
+#btn{
+  background-color: #007bff;
+}
