@@ -21,16 +21,19 @@
 #firstImg-text,#SecondImg-text{
   text-align: center;
   font-size: 1.8em;
-  font-family:Cursive,Arial, Helvetica, sans-serif;
+  font-family: Cursive,Arial, Helvetica, sans-serif;
   color:#0015ff;
+  padding: 1rem;
 }
 #firstImg-text h1,#SecondImg-text h1{
-  font-size: 4rem;
+  font-size: 5rem;
   color:#0015ff;
+  font-family: Cursive,Arial, Helvetica, sans-serif;
 }
 #firstImg-text b ,#SecondImg-text b{
-  font-size: 2rem;
+  font-size: 3rem;
   color: #070707;
+  font-family: Cursive,Arial, Helvetica, sans-serif;
 }
 .text-block {
   max-width: 100%;

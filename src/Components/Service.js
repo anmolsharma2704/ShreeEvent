@@ -45,14 +45,17 @@ const Services = () => {
       <div id='teamImgContainer'>
         {/* Use require directly without setting require={} */}
         <img src={require('./Images/teamwork.jpg')} alt='Team Work' />
-        <div id='team-text'>
-          <h1>Talent & Skill</h1>
-          <p>THERE ARE NO HURDLES WE CAN‘T JUMP</p>
+        <div id='img-text'>
+          <h1>Transforming occasions into legendary celebrations</h1>
+          <b> that's the power of Shree Event</b>
         </div>
       </div>
       <div id='text1'>
-        <h>Shree Event has a diverse team, each offering expert knowledge in their field. From strategy planning, budgeting, and comprehensive registration support to marketing and branding we bring the most current, innovative and professional market expertise.</h>
+        <h1>Shree Event has a diverse team, each offering expert knowledge in their field. From strategy planning, budgeting, and comprehensive registration support to marketing and branding we bring the most current, innovative and professional market expertise.</h1>
       </div>
+      
+      <div id="typesOfEvent">
+      <h1>Types Of Event we organize.</h1>
       <div className="events-container">
         {eventTypes.map((event, index) => (
           <div className="event" key={index}>
@@ -63,6 +66,7 @@ const Services = () => {
             <Link to={event.to}>{event.description}</Link>
           </div>
         ))}
+      </div>
       </div>
       <div className="slider">
         {/* Display the current image */}

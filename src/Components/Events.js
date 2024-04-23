@@ -1,45 +1,44 @@
 import React from "react";
 import "./Events.css";
-import { Link } from 'react-router-dom';
-import birthdayImage from './Images/Birthday.png';
-import weddingImage from './Images/Wedding.png';
-import anniversaryImage from './Images/Anniversary.png';
-import peakpxImage from './Images/peakpx.jpg';
-import eventsImage from './Images/Events_Image.png';
+import { Link } from "react-router-dom";
+import birthdayImage from "./Images/Birthday.png";
+import weddingImage from "./Images/Wedding.png";
+import anniversaryImage from "./Images/Anniversary.png";
+import peakpxImage from "./Images/peakpx.jpg";
 
 const Events = () => {
   const eventTypes = [
     {
-      title: 'Birthday Events',
+      title: "Birthday Events",
       imageUrl: birthdayImage,
-      to: '/birthday',
-      description: 'Learn More'
+      to: "/birthday",
+      description: "Go to memories",
     },
     {
-      title: 'Wedding Events',
+      title: "Wedding Events",
       imageUrl: weddingImage,
-      to: '/wedding',
-      description: 'Learn More'
+      to: "/wedding",
+      description: "Go to memories",
     },
     {
-      title: 'Anniversary Events',
+      title: "Anniversary Events",
       imageUrl: anniversaryImage,
-      to: '/anniversary',
-      description: 'Learn More'
-    }
+      to: "/anniversary",
+      description: "Go to memories",
+    },
   ];
   return (
     <div>
       <div id="teamImgContainer">
         <img src={peakpxImage} alt="" />
         <div id="team-text">
-          <h1>Busy, Busy, Busy</h1>
-          <p>A FEW OF OUR RECENT EVENTS</p>
+          <h1>Transforming ordinary moments into extraordinary memories</h1>
+          <b> one event at a time</b>
         </div>
       </div>
       <div className="text-container">
         <p className="text">
-          <h2>Wow, we've had a busy year... but always make time for fun!  </h2>
+          <h2>Wow, we've had a busy year... but always make time for fun! </h2>
           <br />
           Our clients include not-for-profit organizations, corporate clients,
           regulating bodies, and member associations. <br />
@@ -48,20 +47,27 @@ const Events = () => {
           business of running events.
         </p>
       </div>
-      <img id="Events_Image" src={eventsImage} alt='' />
-      <div className="events-container">
-        {eventTypes.map((event, index) => (
-          <div className="event" key={index}>
-            <h3>{event.title}</h3>
-            <Link to={event.to}>
-              <img src={event.imageUrl} alt={event.title} />
-            </Link>
-            <Link to={event.to}>{event.description}</Link>
-          </div>
-        ))}
+
+      <div className="memories">
+        <h1>
+          Here, we showcase some of our thoughtfully arranged event memories
+        </h1>
+
+        <div className="events-container">
+          {eventTypes.map((event, index) => (
+            <div className="event" key={index}>
+              <h2>{event.title}</h2>
+              <Link to={event.to}>
+                <img src={event.imageUrl} alt={event.title} />
+              </Link>
+              <b>
+                <Link to={event.to}>{event.description}</Link>
+              </b>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
 };
-
 export default Events;

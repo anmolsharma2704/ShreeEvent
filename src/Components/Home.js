@@ -7,8 +7,8 @@ function Home() {
       {/* <Section id="first-img"/> */}
       <div id="first-img">
         <div id="firstImg-text">
-          <h1>EVENT PLANNING IS HARD.</h1>
-          <b>WE CAN HELP YOU.</b>
+          <h1>Where dreams meet reality, and magic is made.</h1>
+          <b>Welcome to Shree Event!</b>
         </div>
       </div>
       <div class="text-block text-block-1">
@@ -29,8 +29,8 @@ function Home() {
 
       <div id="Second-img">
         <div id="SecondImg-text">
-          <h1>EVENT PLANNING</h1>
-          <b>IS OUR PASSION</b>
+          <h1>Life's special moments deserve the Shree touch</h1>
+          <b> unforgettable, impeccable, and filled with joy</b>
         </div>
       </div>
       <div className="text2">

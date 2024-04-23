@@ -22,9 +22,26 @@ const Navbar = () => {
     };
   }, []);
 
+  // Function to toggle the hamburger menu
+  const toggleMenu = () => {
+    setShowMediaIcons(!showMediaIcons);
+  };
+
   // Function to close the hamburger menu
   const closeMenu = () => {
     setShowMediaIcons(false);
+  };
+
+  // Function to toggle menu and close if already open
+  const toggleAndCloseMenu = () => {
+    setShowMediaIcons((prevState) => !prevState);
+  };
+
+  // Function to close the hamburger menu if open
+  const closeIfOpen = () => {
+    if (showMediaIcons) {
+      setShowMediaIcons(false);
+    }
   };
 
   return (
@@ -93,9 +110,14 @@ const Navbar = () => {
 
         {/* hamburger menu start */}
         <div className="hamburger-menu">
-          <button onClick={() => setShowMediaIcons(!showMediaIcons)}>
-            <GiHamburgerMenu />
+          <button onClick={toggleMenu}>
+            <GiHamburgerMenu className="hamburger-icon" />
           </button>
+          {showMediaIcons && (
+            <button onClick={closeMenu} className="close-menu-button">
+              <span>&times;</span>
+            </button>
+          )}
         </div>
       </div>
     </nav>
