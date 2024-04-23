@@ -2,8 +2,6 @@ import React from 'react';
 import "./Contact.css"
 import { Button, DatePicker, Form, Input, Mentions, Select, message } from 'antd'; 
 
-
-
 const formItemLayout = {
   labelCol: { xs: { span: 24 }, sm: { span: 6 } },
   wrapperCol: { xs: { span: 24 }, sm: { span: 14 } },
@@ -23,7 +21,7 @@ const Contact = () => {
   };
 
   return (
-    <Form {...formItemLayout} form={form} onFinish={onFinish} variant="filled" style={{ maxWidth: 600 }}>
+    <Form {...formItemLayout} form={form} onFinish={onFinish} style={{ maxWidth: 600 }}>
       <Form.Item label="Name" name="Name" rules={[{ required: true, message: 'Please input your name!' }]}>
         <Input />
       </Form.Item>
@@ -31,7 +29,7 @@ const Contact = () => {
       <Form.Item label="Mobile Number" name="MobileNumber" rules={[
         { required: true, message: 'Please input your mobile number!' },
         { pattern: /^[0-9]+$/, message: 'Please enter a valid mobile number!' },
-        { len: 10, message: 'Mobile number must be 10 digits!' },
+        { min: 10, max: 10, message: 'Mobile number must be 10 digits!' },
       ]}>
         <Input style={{ width: '100%' }} />
       </Form.Item>
