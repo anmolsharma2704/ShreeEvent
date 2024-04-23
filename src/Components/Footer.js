@@ -1,6 +1,5 @@
 // Footer.js
 import React from 'react';
-import InstagramIcon from '@mui/icons-material/Instagram';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import './Footer.css'; // Importing CSS file for styling
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import "./Contact.css"
-import { Button, DatePicker, Form, Input, InputNumber, Mentions, Select, message } from 'antd'; // Import message from 'antd'
+import { Button, DatePicker, Form, Input, Mentions, Select, message } from 'antd'; 
 
-const { RangePicker } = DatePicker;
+
 
 const formItemLayout = {
   labelCol: { xs: { span: 24 }, sm: { span: 6 } },

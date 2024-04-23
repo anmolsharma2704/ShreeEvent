@@ -1,6 +1,6 @@
 import React from "react";
 import "./Birthday.css";
-import { Link } from 'react-router-dom';
+
 
 // Import images using require.context
 const images = require.context('./Images/Wedding', true);

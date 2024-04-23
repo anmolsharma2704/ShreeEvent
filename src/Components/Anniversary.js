@@ -1,6 +1,5 @@
 import React from "react";
 import "./Birthday.css";
-import { Link } from 'react-router-dom';
 
 // Import images using require.context
 const images = require.context('./Images/Anniversary', true);
@@ -13,10 +12,11 @@ const Anniversary = () => {
       {/* Map over the imageList and render each image wrapped in a div */}
       {imageList.map((image, index) => (
         <div key={index} className="image-container">
-          <img src={image} alt={`image-${index}`} />
+          <img src={image} alt={`Anniversary Image ${index}`} />
         </div>
       ))}
-      <button id="btn" onClick={() => window.history.back()}>Back</button>
+      {/* Add a labeled button for navigation */}
+      <button id="btn" onClick={() => window.history.back()}>Go Back</button>
     </div>
   );
 }
