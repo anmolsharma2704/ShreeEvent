@@ -20,7 +20,23 @@
 
 .footer-section h4 {
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 2rem;
+}
+.footer-section h5 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#Linkedin svg{
+  color: #0000ff;
+  width: 3rem; /* Adjust width as needed */
+  height: 3rem;
+  margin-right: 2rem;
+}
+#Instagram svg{
+  color: #d62976;
+  width: 3rem; /* Adjust width as needed */
+  height: 3rem;
 }
 
 .footer-section p {
@@ -44,11 +60,15 @@
 
 /* Styling for icons */
 .footer-section svg {
-  color: #ff5252; /* Change color as needed */
+  color: #ff0000; /* Change color as needed */
   vertical-align: middle;
-  margin-right: 5px;
+  margin-right: 1rem;
 }
 
+li{
+  font-size: 2rem;
+  font-weight: 400;
+}
 /* Media query for responsiveness */
 @media (max-width: 768px) {
   .footer {
@@ -57,6 +77,15 @@
   }
 
   .footer-section {
-    margin-bottom: 20px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
   }
+  li{
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  p {
+    font-size: 2rem;
+}
+
 }

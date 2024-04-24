@@ -1,24 +1,60 @@
-// Footer.js
-import React from 'react';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import './Footer.css'; // Importing CSS file for styling
+import React from "react";
+import "./Footer.css"; // Importing CSS file for styling
+import { FaHeart, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Footer() {
- 
-
   return (
     <footer className="footer">
-      
       <div className="footer-section">
-        <h4><FavoriteIcon/>Designed by Anmol Sharma with <i className="fa-solid fa-heart"></i></h4>
-        <p>Passionately crafted with love and dedication.</p>
+        <h4>
+          Designed with <FaHeart /> by Anmol Sharma
+        </h4>
+        <h5>Passionately crafted with love and dedication.</h5>
+
+        <li>
+          Email:
+          <a href="mailto:2704anmolsharma@gmail.com">
+            2704anmolsharma@gmail.com
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/anmolsharma2704/"
+            target="_blank"
+            rel="noopener noreferrer"
+          id="Linkedin">
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://www.instagram.com/anmolsharma2704/"
+            target="_blank"
+            rel="noopener noreferrer"id="Instagram"
+          >
+            <FaInstagram />
+          </a>
+        </li>
       </div>
       <div className="footer-section">
         <h4>Contact Us</h4>
         <ul>
-          <p>Email: shreeevent@gmail.com</p>
-          <p>Phone: +91 7014704120</p>
-          </ul>
+          <li>
+            Email:{" "}
+            <a href="mailto:shreeevent@gmail.com">shreeevent@gmail.com</a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.instagram.com/being_anmol2704/"
+              target="_blank"
+              rel="noopener noreferrer" id="Instagram"
+            >
+              <FaInstagram />
+            </a>
+            Follow us on Instagram
+          </li>
+          <li>Phone: +91 7014704120</li>
+        </ul>
       </div>
     </footer>
   );
