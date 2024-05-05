@@ -27,7 +27,7 @@ function Footer() {
             <FaLinkedin />
           </a>
           <a
-            href="https://www.instagram.com/anmolsharma2704/"
+            href="https://www.instagram.com/being_anmol2704/"
             target="_blank"
             rel="noopener noreferrer"id="Instagram"
           >
@@ -45,7 +45,7 @@ function Footer() {
 
           <li>
             <a
-              href="https://www.instagram.com/being_anmol2704/"
+              href="https://www.instagram.com/shree__event_management7014/"
               target="_blank"
               rel="noopener noreferrer" id="Instagram"
             >
