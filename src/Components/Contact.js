@@ -1,13 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
-const Contact = () => {
-  const handleSubmit = (event) => {
-    // Prevent default form submission
-    event.preventDefault();
-    // Perform additional validation if needed
-    // Submit form data if all validations pass
-  };
+
+const Contact = () =>{
+  const [formIsValid, setFormIsValid] = useState(false);
+
+    const [eventDate, setEventDate] = useState('');
+    const [isValidDate, setIsValidDate] = useState(true);
+  
+    const handleDateChange = (event) => {
+      const selectedDate = new Date(event.target.value);
+      const currentDate = new Date();
+      setIsValidDate(selectedDate > currentDate);
+      setEventDate(event.target.value);
+      setFormIsValid(selectedDate > currentDate); // Add this line
+    };
+    
+    const handleSubmit = (event) => {
+      event.preventDefault();
+    
+      // Perform additional validation if needed
+      if (!isValidDate) {
+        alert("Please select a future date for the event.");
+        return;
+      }
+    
+      // Set formIsValid to true if all validations pass
+      setFormIsValid(true); // Add this line
+    
+      console.log("Form submitted successfully!");
+    };
+    
 
   return (
     <section>
@@ -24,6 +47,7 @@ const Contact = () => {
 
       
       <form
+            
             action="https://formspree.io/f/mleqzklz"
             method="POST"
             className="contact-inputs">
@@ -54,14 +78,19 @@ const Contact = () => {
           </Div>
           {/* Date input */}
           <Div className="Element">
-            <StyledLabel htmlFor="eventType">Date of Event</StyledLabel>
-            <StyledInput
-              type="date"
-              name="eventDate"
-              required
-              autoComplete="off"
-            />
-          </Div>
+              <StyledLabel htmlFor="eventType">Date of Event</StyledLabel>
+              <StyledInput
+                type="date"
+                name="eventDate"
+                required
+                autoComplete="off"
+                value={eventDate}
+                onChange={handleDateChange}
+              />
+              {!isValidDate && (
+                <p style={{ color: 'red', marginTop: '0.5rem' }}>Please select a future date</p>
+              )}
+            </Div>
         
           {/* Type of event dropdown */}
           <Div className="Element">
@@ -111,7 +140,8 @@ const Contact = () => {
           
         
       </StyledContainer>
-      <StyledButton type="submit" value="Send" />
+      <StyledButton type="submit" value="Send" disabled={!formIsValid} />
+
       </form>
     </section>
   );
@@ -179,6 +209,7 @@ const StyledLabel = styled.label`
 const StyledSelect = styled.select`
   width: 100%;
   padding: 10px;
+  font-size:2rem;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -221,4 +252,8 @@ const StyledButton = styled.input`
   &:hover {
     background-color: #0056b3;
   }
+
+  // Add this line
+  ${props => props.disabled && 'cursor: not-allowed; opacity: 0.5;'}
 `;
+
