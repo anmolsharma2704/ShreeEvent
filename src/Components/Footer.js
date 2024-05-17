@@ -1,37 +1,47 @@
 import React from "react";
 import "./Footer.css"; // Importing CSS file for styling
-import { FaHeart, FaLinkedin, FaInstagram } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import {
+  FaHeart,
+  FaLinkedin,
+  FaInstagram,
+  FaGithub,
+  FaGlobe,
+} from "react-icons/fa";
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-section">
         <h4>
-          Designed with <FaHeart /> by Anmol Sharma
+          Designed with <FaHeart /> by{" "}
+          <a href="https://anmol-sharma.netlify.app/">Techie Anmol</a>
         </h4>
         <h5>Passionately crafted with love and dedication.</h5>
 
-        <li>
-          Email:
-          <a href="mailto:2704anmolsharma@gmail.com">
-            2704anmolsharma@gmail.com
-          </a>
-        </li>
         <li>
           <a
             href="https://www.linkedin.com/in/anmolsharma2704/"
             target="_blank"
             rel="noopener noreferrer"
-          id="Linkedin">
+            id="Linkedin"
+          >
             <FaLinkedin />
           </a>
           <a
-            href="https://www.instagram.com/being_anmol2704/"
+            href="https://github.com/anmolsharma2704/"
             target="_blank"
-            rel="noopener noreferrer"id="Instagram"
+            rel="noopener noreferrer"
+            id="Github"
           >
-            <FaInstagram />
+            <FaGithub />
+          </a>
+          <a
+            href="https://anmol-sharma.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="Website"
+          >
+            <FaGlobe />
           </a>
         </li>
       </div>
@@ -47,7 +57,8 @@ function Footer() {
             <a
               href="https://www.instagram.com/shree__event_management7014/"
               target="_blank"
-              rel="noopener noreferrer" id="Instagram"
+              rel="noopener noreferrer"
+              id="Instagram"
             >
               <FaInstagram />
             </a>

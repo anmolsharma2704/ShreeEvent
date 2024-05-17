@@ -33,8 +33,13 @@
   height: 3rem;
   margin-right: 2rem;
 }
-#Instagram svg{
-  color: #d62976;
+#Github svg{
+  color: #000000;
+  width: 3rem; /* Adjust width as needed */
+  height: 3rem;
+}
+#Website svg{
+  color: #000000;
   width: 3rem; /* Adjust width as needed */
   height: 3rem;
 }
